@@ -1,0 +1,42 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Create an @supports (display: grid) feature query
+    Inside the query, set .container display to grid and grid-template-columns to 1fr 1fr 1fr
+    Set .container gap to 10px inside the @supports block -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+@supports (display: grid) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+
+</body>
+</html>

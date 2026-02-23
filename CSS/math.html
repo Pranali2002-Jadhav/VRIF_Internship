@@ -1,0 +1,39 @@
+<!-- Instructions
+Inside the editor, complete the following steps:
+
+    Set the .sidebar width using calc: calc(100% / 3)
+    Set the .content width using calc: calc(100% - 100% / 3)
+    Set the .content padding using calc: calc(1rem + 10px)
+ -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: dimgray;
+  color: white;
+  padding: 20px;
+  width: calc(100% / 3);
+}
+
+.content {
+  background-color: #f1f1f1;
+  width: calc(100% - 100% / 3);
+  padding: calc(1rem + 10px);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="sidebar">Sidebar</div>
+  <div class="content">Main Content</div>
+</div>
+
+</body>
+</html>
