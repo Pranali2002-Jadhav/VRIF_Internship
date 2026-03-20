@@ -1,10 +1,10 @@
-function addEvenNumbers(n) {
-    sum=0;
-    for(i=0;i<=n;i++)
-        if(i%2==0)
-            sum=sum+i;
+function makeSumEven(num1, num2) {
+    let sum =num1 + num2;
+    if(sum%2==0)
+        return "Even";
+    else
+        return sum+1;
 
-    return sum
 }
 
-console.log(addEvenNumbers(10));
+console.log(makeSumEven(4,3));
